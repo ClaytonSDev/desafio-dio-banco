@@ -1,7 +1,5 @@
-import java.util.function.DoubleToIntFunction;
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+@SuppressWarnings("unused")
 public class Main {
 
     public static void main(String[] args) {
@@ -11,11 +9,12 @@ public class Main {
         ContaCorrente cc = new ContaCorrente(clayton);
         ContaPoupanca poupanca = new ContaPoupanca(clayton);
 
-        cc.depositar(100);
+        cc.depositar(500);
         cc.transferir(100, poupanca);
 
         cc.imprimirExtrato();
         poupanca.imprimirExtrato();
+     
 
     }
 }
